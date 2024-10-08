@@ -10,10 +10,5 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/samargharsallah2/DevOpsJenkins.git'
             }
         }
-        stage('Compile Stage') {
-            steps {
-                sh 'mvn clean compile'
-            }
-        }
     }
 }
